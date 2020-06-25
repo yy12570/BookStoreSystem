@@ -5,9 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>用户登录</title>
     <link href="assets/css/Login.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="assets/css/Material%20Icons.css" rel="stylesheet" />
     <style>
         body {
             background-color: #F2F2F2;
@@ -27,6 +27,8 @@
             用户登录
        
        
+       
+       
         </div>
         <form id="form1" runat="server">
 
@@ -34,7 +36,7 @@
                 <div class="input-addon">
                     <i class="material-icons">email</i>
                 </div>
-                <asp:TextBox ID="email" CssClass="validate" placeholder="E-mail" runat="server"></asp:TextBox>
+                <asp:TextBox ID="email" CssClass="validate" placeholder="E-mail" runat="server" required="required"></asp:TextBox>
             </div>
 
             <div class="clearfix"></div>
@@ -43,7 +45,7 @@
                 <div class="input-addon">
                     <i class="material-icons">vpn_key</i>
                 </div>
-                <asp:TextBox ID="password" CssClass="validate" runat="server" placeholder="密码" TextMode="Password"></asp:TextBox>
+                <asp:TextBox ID="password" CssClass="validate" runat="server" placeholder="密码" TextMode="Password" required="required"></asp:TextBox>
             </div>
 
             <div class="remember-me">
