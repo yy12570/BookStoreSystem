@@ -1,4 +1,4 @@
-use BookMarket
+use BookStore
 create table Users
 (
 UserId int identity primary key not null, -- 用户UID：由数据库生成
@@ -8,8 +8,8 @@ UserPassword varchar(18),  -- 用户密码
 UserGender char(2),  -- 用户信息：性别
 UserRegTime datetime not null, -- 用户信息：注册时间
 UserStatus int not null, -- 用户状态，0正常 1封禁 2永封
-UserBanUntil datetime -- 用户解封时间
-UserFlag int not null, -- 用户等级，0普通用户 1VIP 99管理员
+UserBanUntil datetime, -- 用户解封时间
+UserFlag int not null -- 用户等级，0普通用户 1VIP 99管理员
 )
 
 

@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\css\flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2" />
+    <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
