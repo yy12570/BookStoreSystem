@@ -16,13 +16,15 @@ UserFlag int not null -- 用户等级，0普通用户 1VIP 99管理员
 create table Books
 (
 BookId int identity primary key not null, -- 图书ID：由数据库生成
-BookName varchar(100) not null, -- 图书信息：书名
+BookContent longtext not null, -- 图书信息
+BookName varchar(100) not null 书名
 BookAuthorId int not null, -- 图书作者ID
 BookAddTime datetime not null, -- 图书上架时间
-BookTypeId int not null,  -- 图书类别ID
+BookClassId int not null,  -- 图书类别ID
 BookPrice money,  -- 图书价格
 BookSales int not null, -- 图书销量
-BookStock int not null, -- 图书库存
+BookAllowance int not null, -- 图书库存
+BookNo varchar(30) ,--书号
 )
 
 create table Authors
@@ -31,10 +33,10 @@ AuthorId int identity primary key not null, -- 作者ID
 AuthorName varchar(50) not null -- 作者姓名
 )
 
-create table BookTypes
+create table BookClass
 (
-TypeId int identity primary key not null, -- 类别ID
-TypeName varchar(50) not null -- 类名
+ClassId int identity primary key not null, -- 类别ID
+ClassName varchar(50) not null -- 类名
 )
 
 create table Orders
